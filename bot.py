@@ -10,6 +10,7 @@ import datetime
 import random
 
 def greeting():
+    # Greets the user and introduces itself.
     Help_desk = [
         "Hi ! Iam Boomer. I'm here to help you. May i know your name.",
         "Wonderful, It is so nice to be in touch with you. I'm Boomer....."
@@ -17,6 +18,7 @@ def greeting():
     print(random.choice(Help_desk))
 
 def wish(name):
+    # Wishes the user according to the time
     time_now = datetime.datetime.now().hour
     if time_now < 12:
         print(f"It's nice to meet you {name}, Good morning")
@@ -26,6 +28,7 @@ def wish(name):
         print(f"It's nice to meet you {name}, Good evening")
 
 def welcome(name):
+    # Wellcomes the use
     messages = [
         f"U can make ur work easier with my help {name}, what are u searching for?",
         f"Lets have some good time together, I can help u to search courses or we can have some fun {name}."
@@ -33,55 +36,60 @@ def welcome(name):
     print(random.choice(messages))
 
 def show_menu():
+    # Display menu for the user to select the action of the bot.
     print("How can I help you? :")
     print("1. Could you give some suggestions about courses to learn?")
     print("2. Calculate my age")
     print("3. Crack a joke for me")
     print("4. End my session")
     try:
-        return int(input("Enter your choice: "))
+        return int(input("Enter your choice: ")) # Returns the choice of the user.
     except Exception:
         print("Enter a valid option")
 
 def tenth():
+    # Asking the input the user whether he completed his 10th or not.
     print("Please help me understand about you!")
     print("Have you completed tenth?")
     print("1. Yes")
     print("2. No or Failed")
     try:
-        t = int(input("Have you completed tenth? :"))
-        if t<1 or t>2:
+        tenth_choice = int(input("Have you completed tenth? :"))
+        if tenth_choice<1 or tenth_choice>2:
             print("Sorry I didn't get that")
             print("----------------------------------")
         else:
-            return t
+            return tenth_choice
     except Exception:
         print("Enter a valid option")
 
 def tenth_qualified():
+    # If the user completed his tenth it returns True.
     tenth_completed = tenth()
     if tenth_completed == 1:
         return True
-    elif tenth_completed == 2:
+    elif tenth_completed == 2: 
         print("Sorry you have to complete tenth first!!")
         print("-----------------------------------------")
         
 def twelth():
+    # If the user completed his tenth, it asks the user twelfth whether he completed twelfth or not.
     if tenth_qualified():
         print("Have you completed you twelfth? ")
         print("1. Yes or persuing deploma")
         print("2. No or Failed")
         try:
-            re =  int(input("Have you completed your twelth? :"))
-            if re <1 or re > 2:
+            twelfth_choice =  int(input("Have you completed your twelth? :"))
+            if twelfth_choice <1 or twelfth_choice > 2:
                 print("Sorry I didn't get that")
                 print("-----------------------------------------")
             else:
-                return re
+                return twelfth_choice
         except Exception:
             print("Enter a valid choice")
 
-def stream():
+def stream(): 
+    # If the user completed his tenth, it asks his stream in twelfth. If not it will suggest some after tenth courses.
     twelfth_completion = twelth()
     if twelfth_completion == 1:
         print("Which stream are you in twelth? :")
@@ -100,6 +108,7 @@ def stream():
         except Exception:
             print("Enter valid option")
     elif twelfth_completion == 2:
+        # Courses for 10th completed students.
         print("We have some courses for tenth complted students too....")
         print("1. Basic English skills")
         print("2. Trignometry")
@@ -107,6 +116,7 @@ def stream():
         print("4. Harappan civilization")
         print("---------------------------------------------")
 def suggestions():
+    # Based on the stream the user selected, it will suggest a few online courses.
     twelth_stream = stream()
     if twelth_stream == 1:
         print("In this pandemic situation, we have to utlize this time for improving knowledge.")
@@ -155,10 +165,12 @@ def suggestions():
         print("-----------------------------------------")
         
 def joke():
+    # Cracks a joke when the user selected that action.
     jokes = ["I ate a clock yesterday, it was very time-consuming."," I failed math so many times at school, I can’t even count.","I want to die peacefully in my sleep, like my grandfather… Not screaming and yelling like the passengers in his car.","Most people are shocked when they find out how bad I am as an electrician.","Just burned 2,000 calories. That’s the last time I leave brownies in the oven while I nap."]
     print(random.choice(jokes))
     
 def age_calculation():
+    # Calculates the age of the user by taking birth date, birth year and birth month as input from the user.
     today_date = datetime.date.today()
     try:
         year = int(input("Enter your birth year: "))
@@ -174,6 +186,7 @@ def age_calculation():
         print("Enter valid input")
     
 def boomer():
+    # Out bot function
     greeting()
     name = input("Enter your name: ")
     wish(name)
