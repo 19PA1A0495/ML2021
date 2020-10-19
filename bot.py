@@ -28,7 +28,7 @@ def wish(name):
         print(f"It's nice to meet you {name}, Good evening")
 
 def welcome(name):
-    # Wellcomes the use
+    # Welcomes the user
     messages = [
         f"U can make ur work easier with my help {name}, what are u searching for?",
         f"Lets have some good time together, I can help u to search courses or we can have some fun {name}."
@@ -45,10 +45,10 @@ def show_menu():
     try:
         return int(input("Enter your choice: ")) # Returns the choice of the user.
     except Exception:
-        print("Enter a valid option")
+        print("Enter a valid option") 
 
 def tenth():
-    # Asking the input the user whether he completed his 10th or not.
+    # Asking the input of user whether the user completed his 10th or not.
     print("Please help me understand about you!")
     print("Have you completed tenth?")
     print("1. Yes")
@@ -64,7 +64,7 @@ def tenth():
         print("Enter a valid option")
 
 def tenth_qualified():
-    # If the user completed his tenth it returns True.
+    # If the user completed his tenth it returns True .
     tenth_completed = tenth()
     if tenth_completed == 1:
         return True
@@ -73,7 +73,7 @@ def tenth_qualified():
         print("-----------------------------------------")
         
 def twelth():
-    # If the user completed his tenth, it asks the user twelfth whether he completed twelfth or not.
+    # If the user completed his tenth, it asks the user  about twelfth standard whether he completed twelfth or not.
     if tenth_qualified():
         print("Have you completed you twelfth? ")
         print("1. Yes or persuing deploma")
@@ -89,7 +89,7 @@ def twelth():
             print("Enter a valid choice")
 
 def stream(): 
-    # If the user completed his tenth, it asks his stream in twelfth. If not it will suggest some after tenth courses.
+    # If the user completed his tenth, it asks his stream in twelfth. If not it will suggest some tenth courses.
     twelfth_completion = twelth()
     if twelfth_completion == 1:
         print("Which stream are you in twelth? :")
