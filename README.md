@@ -8,3 +8,7 @@ So, to suggest a course, the bot needs some requirements like 10th and 12th pass
 The other operation calculates the age when the user has to mention birth date, month and year.  
 It cracks a joke when the user asks to do that operation  
 The bot exits when 4th operation is asked.  
+
+# Block Diagram
+
+<img width="842" alt="Boomer block diagram" src="https://user-images.githubusercontent.com/72657448/96449482-87be6a00-1232-11eb-8768-4de646f455bf.png">
