@@ -18,3 +18,12 @@ The bot exits when 4th operation is asked.
 About the function of bot.
 
 https://youtu.be/M1yCWwuHz2Y
+
+# References
+https://www.geeksforgeeks.org/python-try-except/
+http://classcentral.com/
+
+# Collaborators
+Sumanjali.K - 19PA1A0478
+Harshitha.M - 19PA1A0492
+Mahita.V - 19PA1A0495
