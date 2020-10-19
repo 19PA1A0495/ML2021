@@ -1,10 +1,10 @@
 """
 This is a program for chatbot to give suggestions for online courses.
 1. The chatbot name is boomer.
-2. The bommer will start with a greeting and self intro and ask for name of the person .
-3. The bommer give suggestions of courses for 10th and secondary standard students.
-4. Bommer will calculate ur age .
-5. Bommer will crack a joke and finally the bot ends.
+2. The boomer will start with a greeting and self intro and ask for name of the person .
+3. The boomer give suggestions of courses for 10th and secondary standard students.
+4. Boomer will calculate ur age .
+5. Boomer will crack a joke and finally the bot ends.
 """
 import datetime
 import random
@@ -166,7 +166,7 @@ def suggestions():
         
 def joke():
     # Cracks a joke when the user selected that action.
-    jokes = ["I ate a clock yesterday, it was very time-consuming."," I failed math so many times at school, I can’t even count.","I want to die peacefully in my sleep, like my grandfather… Not screaming and yelling like the passengers in his car.","Most people are shocked when they find out how bad I am as an electrician.","Just burned 2,000 calories. That’s the last time I leave brownies in the oven while I nap."]
+    jokes = ["I ate a clock yesterday, it was very time-consuming."," I failed math so many times at school, I can’t even count.","I want to die peacefully in my sleep, like my grandfather…, Not screaming and yelling like the passengers in his car.","Most people are shocked when they find out how bad I am as an electrician.","Just burned 2,000 calories. That’s the last time I leave brownies in the oven while I nap.","I advise you, dont mess with me, I know karate, king fu, judo, and 28 other dangerous words","Never criticize someone until you've walked a mile in their shoes. That way, when you criticize them, they won't be able to hear you from that far away. Plus, you'll have their shoes."]
     print(random.choice(jokes))
     
 def age_calculation():
