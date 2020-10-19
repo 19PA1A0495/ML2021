@@ -15,4 +15,6 @@ The bot exits when 4th operation is asked.
 
 # You Tube link
 
+About the function of bot.
+
 https://youtu.be/M1yCWwuHz2Y
